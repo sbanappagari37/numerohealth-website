@@ -51,6 +51,11 @@
   .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
   .hero-note{font-size:13px;color:var(--faint);margin-top:16px}
   .hero-art{background:var(--surface);border:1px solid var(--rule);border-radius:22px;padding:22px;box-shadow:0 10px 40px rgba(15,23,42,.06)}
+  .hero-phones{position:relative;display:flex;justify-content:center;align-items:center;padding:10px 0}
+  .hero-phones .phone{width:198px}
+  .hero-phones .phone-back{transform:rotate(6deg) translateY(-6px);margin-right:-60px;z-index:1}
+  .hero-phones .phone-front{transform:rotate(-3deg);z-index:2}
+  @media(max-width:520px){.hero-phones .phone{width:166px}.hero-phones .phone-back{margin-right:-46px}}
 
   /* Sections */
   section{padding:56px 0}
@@ -212,28 +217,53 @@
       </div>
       <div class="hero-note">Educational wellness tool — not medical advice, and not a substitute for your healthcare provider.</div>
     </div>
-    <div class="hero-art">
-      <svg width="100%" viewBox="0 0 380 300" role="img" aria-label="Illustration of a daily wellness companion">
-        <rect x="0" y="0" width="380" height="300" rx="18" fill="#E3F1EE"/>
-        <rect x="26" y="26" width="328" height="60" rx="12" fill="#fff"/>
-        <circle cx="56" cy="56" r="16" fill="#0E8F7E"/>
-        <path d="M50 56 l4 4 8 -9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <rect x="84" y="44" width="150" height="9" rx="4.5" fill="#173A5E"/>
-        <rect x="84" y="62" width="96" height="8" rx="4" fill="#9FE1CB"/>
-        <rect x="26" y="100" width="158" height="80" rx="12" fill="#fff"/>
-        <rect x="196" y="100" width="158" height="80" rx="12" fill="#fff"/>
-        <circle cx="66" cy="140" r="26" fill="none" stroke="#E3E8EF" stroke-width="7"/>
-        <circle cx="66" cy="140" r="26" fill="none" stroke="#0E8F7E" stroke-width="7" stroke-linecap="round" stroke-dasharray="163" stroke-dashoffset="60" transform="rotate(-90 66 140)"/>
-        <rect x="104" y="124" width="66" height="9" rx="4.5" fill="#173A5E"/>
-        <rect x="104" y="142" width="52" height="8" rx="4" fill="#CBD5E1"/>
-        <rect x="216" y="120" width="118" height="9" rx="4.5" fill="#173A5E"/>
-        <polyline points="216,164 246,150 276,156 306,134 334,140" fill="none" stroke="#0E8F7E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        <rect x="26" y="194" width="328" height="80" rx="12" fill="#fff"/>
-        <rect x="42" y="212" width="120" height="10" rx="5" fill="#0E8F7E"/>
-        <rect x="42" y="234" width="150" height="8" rx="4" fill="#CBD5E1"/>
-        <rect x="42" y="250" width="96" height="8" rx="4" fill="#E3E8EF"/>
-        <rect x="250" y="222" width="88" height="34" rx="10" fill="#0E8F7E"/>
-      </svg>
+    <div class="hero-phones">
+
+      <div class="phone phone-back"><div class="screen">
+        <div class="pk-notch"><b></b></div>
+        <div class="pk-body">
+          <div style="font-size:12.5px;font-weight:800;color:#173A5E;margin-bottom:11px">📈 Your progress</div>
+          <div class="pk-card" style="margin-bottom:10px">
+            <div style="font-size:10.5px;color:#64748B;margin-bottom:2px">Weight trend</div>
+            <div style="font-size:17px;font-weight:800;color:#173A5E;line-height:1;margin-bottom:8px">−1.8 <span style="font-size:10.5px;color:#64748B;font-weight:600">lbs / week</span></div>
+            <svg width="100%" viewBox="0 0 200 60" preserveAspectRatio="none" style="height:48px">
+              <polyline points="6,12 42,22 82,26 122,38 158,46 194,54" fill="none" stroke="#0E8F7E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="194" cy="54" r="4" fill="#0E8F7E"/>
+            </svg>
+          </div>
+          <div style="display:flex;gap:9px;margin-bottom:10px">
+            <div style="flex:1;background:#fff;border:1px solid #E3E8EF;border-radius:11px;padding:9px"><div style="font-size:10px;color:#64748B">BMI</div><div style="font-size:15px;font-weight:800;color:#173A5E">24.1</div></div>
+            <div style="flex:1;background:#fff;border:1px solid #E3E8EF;border-radius:11px;padding:9px"><div style="font-size:10px;color:#64748B">Check-ins</div><div style="font-size:15px;font-weight:800;color:#173A5E">18</div></div>
+          </div>
+          <div style="background:rgba(14,143,126,.08);border-radius:11px;padding:10px">
+            <div style="font-size:11px;font-weight:800;color:#0B7E70;margin-bottom:2px">✨ What's helping</div>
+            <div style="font-size:10.5px;color:#475569">Your protein habit tracks with fewer rough days.</div>
+          </div>
+        </div>
+        <div class="pk-nav"><span>🏠</span><span>🍽️</span><span>💊</span><span class="on">📈</span><span>✨</span></div>
+      </div></div>
+
+      <div class="phone phone-front"><div class="screen">
+        <div class="pk-notch"><b></b></div>
+        <div class="pk-body">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px">
+            <span style="width:28px;height:28px;border-radius:50%;background:rgba(14,143,126,.12);display:flex;align-items:center;justify-content:center;font-size:14px">👋</span>
+            <div><div style="font-size:12.5px;font-weight:800;color:#173A5E">Hi there</div><div style="font-size:10.5px;color:#64748B">Let's check in for today</div></div>
+          </div>
+          <div class="pk-card">
+            <div style="font-size:11.5px;font-weight:800;color:#0B7E70;margin-bottom:11px">How are you feeling?</div>
+            <div style="display:flex;flex-direction:column;gap:11px">
+              <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Nausea</div><div class="pk-seg"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></div>
+              <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Energy</div><div class="pk-seg"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
+              <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Sleep</div><div class="pk-seg"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div></div>
+            </div>
+            <div style="margin-top:12px;background:#0E8F7E;color:#fff;text-align:center;font-size:11.5px;font-weight:800;border-radius:9px;padding:8px">Save check-in</div>
+          </div>
+          <div style="margin-top:10px;font-size:10.5px;color:#0B7E70;font-weight:700;text-align:center">🔥 3-day streak</div>
+        </div>
+        <div class="pk-nav"><span class="on">🏠</span><span>🍽️</span><span>💊</span><span>📈</span><span>✨</span></div>
+      </div></div>
+
     </div>
   </div>
 </section>

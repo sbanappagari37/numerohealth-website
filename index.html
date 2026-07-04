@@ -38,6 +38,7 @@
   .brand .sun{width:24px;height:24px}
   .nav-links{display:flex;align-items:center;gap:26px}
   .nav-links a{font-size:14.5px;font-weight:700;color:var(--soft)}
+  .nav-links a.btn-primary{color:#fff}
   .nav-links a:hover{color:var(--ink)}
   @media(max-width:760px){.nav-links a:not(.btn){display:none}}
 
@@ -104,10 +105,10 @@
   details[open] summary .chev{transform:rotate(180deg)}
   details p{color:var(--soft);font-size:15px;padding:0 0 16px}
 
-  .cta-final{text-align:center;background:var(--navy);border-radius:24px;padding:52px 24px;color:#fff}
+  .cta-final{text-align:center;background:var(--jade);border-radius:24px;padding:52px 24px;color:#fff}
   .cta-final h2{font-size:30px;font-weight:800;margin-bottom:10px}
   .cta-final p{color:#C7D6E6;font-size:16.5px;max-width:44ch;margin:0 auto 24px}
-  .cta-final .btn-primary{background:#fff;color:var(--navy)}
+  .cta-final .btn-primary{background:#fff;color:var(--jade)}
   .cta-final .btn-primary:hover{background:#EAF2F0}
 
   footer{padding:44px 0 60px;border-top:1px solid var(--rule);margin-top:20px}
@@ -190,7 +191,7 @@
   <div class="wrap hero-grid">
     <div>
       <span class="chip-free">✓ Free to start</span>
-      <h1>Stay on track with your <span style="color:var(--jade)">GLP-1 journey</span>.</h1>
+      <h1><span style="color:#4C8C2B">Stay on track with your</span> <span style="color:var(--jade)">GLP-1 journey</span>.</h1>
       <p class="lede">NumeroHealth is a simple, private companion that helps you eat well, feel better, and see your progress — all in one place.</p>
       <div class="badges">
         <a class="store-badge" href="https://app.numerohealth.com" aria-label="Download on the App Store">
@@ -251,8 +252,10 @@
         <g font-size="13.5" font-weight="700" fill="#334155">
           <g><rect x="12" y="34" width="118" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="30" y="56">🤢 Nausea</text></g>
           <g><rect x="270" y="30" width="114" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="288" y="52">😴 Fatigue</text></g>
-          <g><rect x="256" y="116" width="138" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="274" y="138">🍽️ Low appetite</text></g>
-          <g><rect x="8" y="198" width="140" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="26" y="220">💪 Hit protein?</text></g>
+          <g><rect x="6" y="112" width="138" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="24" y="134">🍽️ Low appetite</text></g>
+          <g><rect x="256" y="112" width="142" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="274" y="134">🌀 Constipation</text></g>
+          <g><rect x="262" y="198" width="136" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="280" y="220">🏋️ Muscle loss</text></g>
+          <g><rect x="8" y="198" width="140" height="33" rx="16.5" fill="#fff" stroke="#E7EDEB"/><text x="26" y="220">💪 Hit Protein?</text></g>
         </g>
 
         <!-- the payoff -->
@@ -330,11 +333,11 @@
             <div class="pk-card">
               <div style="font-size:11.5px;font-weight:800;color:#0C4A8C;margin-bottom:14px">How are you feeling?</div>
               <div style="display:flex;flex-direction:column;gap:14px">
-                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Nausea</div><div class="pk-seg"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></div>
-                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Constipation</div><div class="pk-seg"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div></div>
-                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Headache</div><div class="pk-seg"><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
-                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Abdominal Pain</div><div class="pk-seg"><i class="on"></i><i></i><i></i><i></i><i></i></div></div>
-                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Vomiting</div><div class="pk-seg"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div></div>
+                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Nausea</div><div class="pk-seg"><i class="on" style="background:#BEF264"></i><i class="on" style="background:#BEF264"></i><i></i><i></i><i></i></div></div>
+                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Constipation</div><div class="pk-seg"><i class="on" style="background:#FDE047"></i><i class="on" style="background:#FDE047"></i><i class="on" style="background:#FDE047"></i><i></i><i></i></div></div>
+                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Headache</div><div class="pk-seg"><i class="on" style="background:#6EE7B7"></i><i></i><i></i><i></i><i></i></div></div>
+                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Abdominal Pain</div><div class="pk-seg"><i class="on" style="background:#6EE7B7"></i><i></i><i></i><i></i><i></i></div></div>
+                <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Vomiting</div><div class="pk-seg"><i class="on" style="background:#BEF264"></i><i class="on" style="background:#BEF264"></i><i></i><i></i><i></i></div></div>
               </div>
               <div style="margin-top:16px;background:#0A66C2;color:#fff;text-align:center;font-size:11.5px;font-weight:800;border-radius:9px;padding:11px">Save check-in</div>
             </div>
@@ -352,7 +355,7 @@
             <div style="font-size:12.5px;font-weight:800;color:#173A5E;margin-bottom:5px">🍽️ Today's plan</div>
             <div style="font-size:10.5px;color:#64748B;margin-bottom:22px">Tailored for <span style="color:#0C4A8C;background:rgba(10,102,194,.10);border:1px solid rgba(10,102,194,.3);border-radius:20px;padding:1px 8px;font-weight:700">Vegetarian</span></div>
             <div class="pk-card" style="margin-bottom:19px">
-              <div style="font-size:11px;font-weight:800;color:#0C4A8C;margin-bottom:14px">EAT</div>
+              <div style="font-size:11px;font-weight:800;color:#0C4A8C;margin-bottom:14px">CONSIDER</div>
               <div style="display:flex;flex-wrap:wrap;gap:7px"><span class="pk-pill">🥚 Protein</span><span class="pk-pill">🥬 Greens</span><span class="pk-pill">🌾 Fiber</span></div>
             </div>
             <div class="pk-card" style="margin-bottom:19px">

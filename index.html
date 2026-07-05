@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
   :root{
-    --jade:#0A66C2; --jade-deep:#0C4A8C; --jade-dim:rgba(10,102,194,.10);
+    --jade:#0A66C2; --jade-deep:#0A66C2; --jade-hover:#0A5299; --jade-dim:rgba(10,102,194,.10);
     --mint:#E3F1EE; --navy:#173A5E; --ink:#1E293B; --soft:#475569; --faint:#64748B;
     --rule:#E3E8EF; --surface:#FFFFFF; --page:#F7FBFA;
     --r:16px; --maxw:1080px;
@@ -26,7 +26,7 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
   .btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;border-radius:12px;padding:12px 22px;transition:.15s;cursor:pointer;border:none}
   .btn-primary{background:var(--jade);color:#fff}
-  .btn-primary:hover{background:var(--jade-deep)}
+  .btn-primary:hover{background:var(--jade-hover)}
   .btn-ghost{background:transparent;color:var(--jade-deep);border:1.5px solid rgba(10,102,194,.3)}
   .btn-ghost:hover{background:var(--jade-dim)}
   .eyebrow{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--jade-deep)}
@@ -70,7 +70,7 @@
   .card p{font-size:14.5px;color:var(--soft)}
   /* colorful accents */
   .c-green{border-top-color:#0A66C2} .c-green .ic{background:rgba(10,102,194,.13)}
-  .c-blue{border-top-color:#2563EB} .c-blue .ic{background:rgba(37,99,235,.12)}
+  .c-blue{border-top-color:#0A66C2} .c-blue .ic{background:rgba(10,102,194,.12)}
   .c-coral{border-top-color:#F2675B} .c-coral .ic{background:rgba(242,103,91,.15)}
   .c-amber{border-top-color:#EF9F27} .c-amber .ic{background:rgba(239,159,39,.20)}
 
@@ -84,7 +84,7 @@
   .band{background:var(--mint);border-top:1px solid #CFE7E1;border-bottom:1px solid #CFE7E1}
   .band-warm{background:#FFF6E9;border-top:1px solid #F3E2C1;border-bottom:1px solid #F3E2C1}
   .step:nth-child(1) .n{background:#0A66C2}
-  .step:nth-child(2) .n{background:#2563EB}
+  .step:nth-child(2) .n{background:#0A66C2}
   .step:nth-child(3) .n{background:#EF9F27}
   .who{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
   @media(max-width:760px){.who{grid-template-columns:1fr}}
@@ -330,7 +330,7 @@
               <div><div style="font-size:12.5px;font-weight:800;color:#173A5E">Hi there</div><div style="font-size:10.5px;color:#64748B">Let's check in for today</div></div>
             </div>
             <div class="pk-card">
-              <div style="font-size:11.5px;font-weight:800;color:#0C4A8C;margin-bottom:14px">How are you feeling?</div>
+              <div style="font-size:11.5px;font-weight:800;color:#0A66C2;margin-bottom:14px">How are you feeling?</div>
               <div style="display:flex;flex-direction:column;gap:14px">
                 <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Nausea</div><div class="pk-seg"><i class="on" style="background:#BEF264"></i><i class="on" style="background:#BEF264"></i><i></i><i></i><i></i></div></div>
                 <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Constipation</div><div class="pk-seg"><i class="on" style="background:#FDE047"></i><i class="on" style="background:#FDE047"></i><i class="on" style="background:#FDE047"></i><i></i><i></i></div></div>
@@ -340,7 +340,7 @@
               </div>
               <div style="margin-top:16px;background:#0A66C2;color:#fff;text-align:center;font-size:11.5px;font-weight:800;border-radius:9px;padding:11px">Save check-in</div>
             </div>
-            <div style="margin-top:16px;font-size:10.5px;color:#0C4A8C;font-weight:700;text-align:center">🔥 3-day streak</div>
+            <div style="margin-top:16px;font-size:10.5px;color:#0A66C2;font-weight:700;text-align:center">🔥 3-day streak</div>
           </div>
           <div class="pk-nav"><span class="on">🏠</span><span>🍽️</span><span>💊</span><span>📈</span><span>✨</span></div>
         </div></div>
@@ -353,11 +353,11 @@
           <div class="pk-body">
             <div style="font-size:12.5px;font-weight:800;color:#173A5E;margin-bottom:5px">🍽️ Today's plan</div>
             <div class="pk-card" style="margin-bottom:19px">
-              <div style="font-size:11px;font-weight:800;color:#0C4A8C;margin-bottom:14px">CONSIDER</div>
+              <div style="font-size:11px;font-weight:800;color:#0A66C2;margin-bottom:14px">CONSIDER</div>
               <div style="display:flex;flex-wrap:wrap;gap:7px"><span class="pk-pill">🥚 Protein</span><span class="pk-pill">🥬 Greens</span><span class="pk-pill">🌾 Fiber</span></div>
             </div>
             <div class="pk-card" style="margin-bottom:19px">
-              <div style="font-size:11px;font-weight:800;color:#0C4A8C;margin-bottom:14px">CONSIDER</div>
+              <div style="font-size:11px;font-weight:800;color:#0A66C2;margin-bottom:14px">CONSIDER</div>
               <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="pk-pill">⚡ Electrolytes</span></div>
             </div>
             <div class="pk-card">
@@ -396,7 +396,7 @@
               <div style="flex:1;background:#fff;border:1px solid #E3E8EF;border-radius:11px;padding:9px"><div style="font-size:10px;color:#64748B">Check-ins</div><div style="font-size:15px;font-weight:800;color:#173A5E">18</div></div>
             </div>
             <div style="background:rgba(10,102,194,.08);border-radius:11px;padding:10px">
-              <div style="font-size:11px;font-weight:800;color:#0C4A8C;margin-bottom:2px">✨ What's Helping</div>
+              <div style="font-size:11px;font-weight:800;color:#0A66C2;margin-bottom:2px">✨ What's Helping</div>
               <div style="font-size:10.5px;color:#475569">Your protein habit tracks with fewer rough days.</div>
             </div>
           </div>
@@ -457,7 +457,7 @@
         <rect x="60" y="150" width="30" height="46" rx="6" fill="#A9CDF2"/>
         <rect x="110" y="120" width="30" height="76" rx="6" fill="#85B7EB"/>
         <rect x="160" y="96" width="30" height="100" rx="6" fill="#0A66C2"/>
-        <rect x="210" y="72" width="30" height="124" rx="6" fill="#0C4A8C"/>
+        <rect x="210" y="72" width="30" height="124" rx="6" fill="#0A66C2"/>
         <path d="M62 150 L125 118 L175 96 L225 68" fill="none" stroke="#173A5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M262 52 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#EF9F27"/>
       </svg>

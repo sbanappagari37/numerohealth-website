@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NumeroHealth — Your companion for the GLP-1 journey</title>
 <meta name="description" content="NumeroHealth is an educational wellness companion for people using GLP-1 medications — helping you stay on track with nutrition, supplements, symptoms, and progress. Not medical advice.">
-<meta name="theme-color" content="#0A66C2">
+<meta name="theme-color" content="#0C7B8A">
 <meta property="og:title" content="NumeroHealth — Your companion for the GLP-1 journey">
 <meta property="og:description" content="Nutrition, supplements, symptoms, and progress — in one simple place. An educational wellness tool for people on GLP-1 medications.">
 <meta property="og:type" content="website">
@@ -13,7 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
   :root{
-    --jade:#0A66C2; --jade-deep:#0A66C2; --jade-hover:#0A5299; --jade-dim:rgba(10,102,194,.10);
+    --jade:#0C7B8A; --jade-deep:#0C7B8A; --jade-hover:#0A5A66; --jade-dim:rgba(12,123,138,.10);
+    --coral:#E07A5F; --coral-hover:#C85A3E;
     --mint:#E3F1EE; --navy:#173A5E; --ink:#1E293B; --soft:#475569; --faint:#64748B;
     --rule:#E3E8EF; --surface:#FFFFFF; --page:#F7FBFA;
     --r:16px; --maxw:1080px;
@@ -25,9 +26,9 @@
   a{color:inherit;text-decoration:none}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
   .btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;border-radius:12px;padding:12px 22px;transition:.15s;cursor:pointer;border:none}
-  .btn-primary{background:var(--jade);color:#fff}
-  .btn-primary:hover{background:var(--jade-hover)}
-  .btn-ghost{background:transparent;color:var(--jade-deep);border:1.5px solid rgba(10,102,194,.3)}
+  .btn-primary{background:var(--coral);color:#fff}
+  .btn-primary:hover{background:var(--coral-hover)}
+  .btn-ghost{background:transparent;color:var(--jade-deep);border:1.5px solid rgba(12,123,138,.3)}
   .btn-ghost:hover{background:var(--jade-dim)}
   .eyebrow{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--jade-deep)}
 
@@ -69,8 +70,8 @@
   .card h3{font-size:17px;color:var(--navy);margin-bottom:6px;font-weight:800}
   .card p{font-size:14.5px;color:var(--soft)}
   /* colorful accents */
-  .c-green{border-top-color:#0A66C2} .c-green .ic{background:rgba(10,102,194,.13)}
-  .c-blue{border-top-color:#0A66C2} .c-blue .ic{background:rgba(10,102,194,.12)}
+  .c-green{border-top-color:#0C7B8A} .c-green .ic{background:rgba(12,123,138,.13)}
+  .c-blue{border-top-color:#0C7B8A} .c-blue .ic{background:rgba(12,123,138,.12)}
   .c-coral{border-top-color:#F2675B} .c-coral .ic{background:rgba(242,103,91,.15)}
   .c-amber{border-top-color:#EF9F27} .c-amber .ic{background:rgba(239,159,39,.20)}
 
@@ -83,8 +84,8 @@
 
   .band{background:var(--mint);border-top:1px solid #CFE7E1;border-bottom:1px solid #CFE7E1}
   .band-warm{background:#FFF6E9;border-top:1px solid #F3E2C1;border-bottom:1px solid #F3E2C1}
-  .step:nth-child(1) .n{background:#0A66C2}
-  .step:nth-child(2) .n{background:#0A66C2}
+  .step:nth-child(1) .n{background:#0C7B8A}
+  .step:nth-child(2) .n{background:#0C7B8A}
   .step:nth-child(3) .n{background:#EF9F27}
   .who{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
   @media(max-width:760px){.who{grid-template-columns:1fr}}
@@ -128,7 +129,7 @@
   .store-badge .sb-t small{font-size:9.5px;opacity:.85;letter-spacing:.02em}
   .store-badge .sb-t b{font-size:15px;font-weight:800}
   .badge-note{font-size:12px;color:var(--faint);margin-top:10px}
-  .med{font-size:15px;font-weight:800;color:var(--jade-deep);background:#fff;border:1.5px solid rgba(10,102,194,.28);border-radius:22px;padding:9px 18px}
+  .med{font-size:15px;font-weight:800;color:var(--jade-deep);background:#fff;border:1.5px solid rgba(12,123,138,.28);border-radius:22px;padding:9px 18px}
   /* social proof */
   .proof{display:flex;gap:26px;flex-wrap:wrap;align-items:center;margin-top:20px}
   .proof .pi{display:flex;flex-direction:column}
@@ -144,7 +145,7 @@
   .peek-cap{font-size:12.5px;font-weight:800;color:var(--jade-deep)}
   .pk-seg{display:flex;gap:4px}
   .pk-seg i{flex:1;height:10px;border-radius:3px;background:#E3E8EF;display:block}
-  .pk-seg i.on{background:#0A66C2}
+  .pk-seg i.on{background:#0C7B8A}
   .pk-pill{font-size:11px;font-weight:700;color:#173A5E;background:#EEF4F2;border:1px solid #E3E8EF;border-radius:12px;padding:7px 11px}
   .pk-nav{display:flex;justify-content:space-around;padding:8px 0;border-top:1px solid #E3E8EF;font-size:14px}
   .pk-nav span{opacity:.4}.pk-nav span.on{opacity:1}
@@ -225,7 +226,7 @@
           <rect x="182" y="190" width="36" height="56" rx="9" fill="#fff" stroke="#CBD5E1" stroke-width="2"/>
           <rect x="184" y="224" width="32" height="20" rx="7" fill="#A9CDF2"/>
           <rect x="192" y="183" width="16" height="8" fill="#CBD5E1"/>
-          <rect x="185" y="172" width="30" height="13" rx="3" fill="#0A66C2"/>
+          <rect x="185" y="172" width="30" height="13" rx="3" fill="#0C7B8A"/>
           <text x="200" y="212" text-anchor="middle" font-size="9.5" font-weight="800" fill="#173A5E">GLP-1</text>
         </g>
 
@@ -234,11 +235,11 @@
           <!-- needle end -->
           <rect x="90" y="-5" width="9" height="10" rx="2" fill="#CBD5E1"/>
           <rect x="99" y="-2.5" width="27" height="5" rx="2.5" fill="#94A3B8"/>
-          <circle cx="132" cy="0" r="4" fill="#0A66C2"/>
+          <circle cx="132" cy="0" r="4" fill="#0C7B8A"/>
           <!-- body -->
           <rect x="-115" y="-20" width="205" height="40" rx="20" fill="#173A5E"/>
           <!-- grip / injector end (teal, rounded left) -->
-          <path d="M-50,-20 h-45 a20,20 0 0 0 0,40 h45 z" fill="#0A66C2"/>
+          <path d="M-50,-20 h-45 a20,20 0 0 0 0,40 h45 z" fill="#0C7B8A"/>
           <line x1="-100" y1="-9" x2="-100" y2="9" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
           <line x1="-92" y1="-9" x2="-92" y2="9" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
           <line x1="-84" y1="-9" x2="-84" y2="9" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
@@ -259,7 +260,7 @@
 
         <!-- the payoff -->
         <g>
-          <rect x="150" y="286" width="182" height="40" rx="20" fill="#0A66C2"/>
+          <rect x="150" y="286" width="182" height="40" rx="20" fill="#0C7B8A"/>
           <path d="M170,306 l6,6 11,-12" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
           <text x="198" y="311" font-size="14.5" font-weight="800" fill="#fff">Back on track</text>
         </g>
@@ -327,11 +328,11 @@
           <div class="pk-notch"><b></b></div>
           <div class="pk-body">
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px">
-              <span style="width:28px;height:28px;border-radius:50%;background:rgba(10,102,194,.12);display:flex;align-items:center;justify-content:center;font-size:14px">👋</span>
+              <span style="width:28px;height:28px;border-radius:50%;background:rgba(12,123,138,.12);display:flex;align-items:center;justify-content:center;font-size:14px">👋</span>
               <div><div style="font-size:12.5px;font-weight:800;color:#173A5E">Hi there</div><div style="font-size:10.5px;color:#64748B">Let's check in for today</div></div>
             </div>
             <div class="pk-card">
-              <div style="font-size:11.5px;font-weight:800;color:#0A66C2;margin-bottom:14px">How are you feeling?</div>
+              <div style="font-size:11.5px;font-weight:800;color:#0C7B8A;margin-bottom:14px">How are you feeling?</div>
               <div style="display:flex;flex-direction:column;gap:14px">
                 <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Nausea</div><div class="pk-seg"><i class="on" style="background:#BEF264"></i><i class="on" style="background:#BEF264"></i><i></i><i></i><i></i></div></div>
                 <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Constipation</div><div class="pk-seg"><i class="on" style="background:#FDE047"></i><i class="on" style="background:#FDE047"></i><i class="on" style="background:#FDE047"></i><i></i><i></i></div></div>
@@ -339,9 +340,9 @@
                 <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Abdominal Pain</div><div class="pk-seg"><i class="on" style="background:#6EE7B7"></i><i></i><i></i><i></i><i></i></div></div>
                 <div><div style="font-size:11px;color:#1E293B;margin-bottom:4px">Vomiting</div><div class="pk-seg"><i class="on" style="background:#BEF264"></i><i class="on" style="background:#BEF264"></i><i></i><i></i><i></i></div></div>
               </div>
-              <div style="margin-top:16px;background:#0A66C2;color:#fff;text-align:center;font-size:11.5px;font-weight:800;border-radius:9px;padding:11px">Save check-in</div>
+              <div style="margin-top:16px;background:#0C7B8A;color:#fff;text-align:center;font-size:11.5px;font-weight:800;border-radius:9px;padding:11px">Save check-in</div>
             </div>
-            <div style="margin-top:16px;font-size:10.5px;color:#0A66C2;font-weight:700;text-align:center">🔥 3-day streak</div>
+            <div style="margin-top:16px;font-size:10.5px;color:#0C7B8A;font-weight:700;text-align:center">🔥 3-day streak</div>
           </div>
           <div class="pk-nav"><span class="on">🏠</span><span>🍽️</span><span>💊</span><span>📈</span><span>✨</span></div>
         </div></div>
@@ -354,11 +355,11 @@
           <div class="pk-body">
             <div style="font-size:12.5px;font-weight:800;color:#173A5E;margin-bottom:5px">🍽️ Today's plan</div>
             <div class="pk-card" style="margin-bottom:19px">
-              <div style="font-size:11px;font-weight:800;color:#0A66C2;margin-bottom:14px">CONSIDER</div>
+              <div style="font-size:11px;font-weight:800;color:#0C7B8A;margin-bottom:14px">CONSIDER</div>
               <div style="display:flex;flex-wrap:wrap;gap:7px"><span class="pk-pill">🥚 Protein</span><span class="pk-pill">🥬 Greens</span><span class="pk-pill">🌾 Fiber</span></div>
             </div>
             <div class="pk-card" style="margin-bottom:19px">
-              <div style="font-size:11px;font-weight:800;color:#0A66C2;margin-bottom:14px">CONSIDER</div>
+              <div style="font-size:11px;font-weight:800;color:#0C7B8A;margin-bottom:14px">CONSIDER</div>
               <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="pk-pill">⚡ Electrolytes</span></div>
             </div>
             <div class="pk-card">
@@ -380,24 +381,24 @@
               <div style="font-size:10.5px;color:#64748B;margin-bottom:2px">Weight Trend</div>
               <div style="font-size:17px;font-weight:800;color:#173A5E;line-height:1;margin-bottom:8px">−1.8 <span style="font-size:10.5px;color:#64748B;font-weight:600">lbs / week</span></div>
               <svg width="100%" viewBox="0 0 200 60" preserveAspectRatio="none" style="height:50px">
-                <polyline points="6,12 42,22 82,26 122,38 158,46 194,54" fill="none" stroke="#0A66C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="194" cy="54" r="4" fill="#0A66C2"/>
+                <polyline points="6,12 42,22 82,26 122,38 158,46 194,54" fill="none" stroke="#0C7B8A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="194" cy="54" r="4" fill="#0C7B8A"/>
               </svg>
             </div>
             <div class="pk-card" style="margin-bottom:10px">
               <div style="font-size:10.5px;color:#64748B;margin-bottom:2px">Nausea</div>
               <div style="font-size:17px;font-weight:800;color:#173A5E;line-height:1;margin-bottom:8px">Easing <span style="font-size:10.5px;color:#64748B;font-weight:600">last 2 weeks</span></div>
               <svg width="100%" viewBox="0 0 200 60" preserveAspectRatio="none" style="height:50px">
-                <polyline points="6,10 42,16 82,30 122,34 158,46 194,52" fill="none" stroke="#0A66C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="194" cy="52" r="4" fill="#0A66C2"/>
+                <polyline points="6,10 42,16 82,30 122,34 158,46 194,52" fill="none" stroke="#0C7B8A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="194" cy="52" r="4" fill="#0C7B8A"/>
               </svg>
             </div>
             <div style="display:flex;gap:9px;margin-bottom:10px">
               <div style="flex:1;background:#fff;border:1px solid #E3E8EF;border-radius:11px;padding:9px"><div style="font-size:10px;color:#64748B">BMI</div><div style="font-size:15px;font-weight:800;color:#173A5E">24.1</div></div>
               <div style="flex:1;background:#fff;border:1px solid #E3E8EF;border-radius:11px;padding:9px"><div style="font-size:10px;color:#64748B">Check-ins</div><div style="font-size:15px;font-weight:800;color:#173A5E">18</div></div>
             </div>
-            <div style="background:rgba(10,102,194,.08);border-radius:11px;padding:10px">
-              <div style="font-size:11px;font-weight:800;color:#0A66C2;margin-bottom:2px">✨ What's Helping</div>
+            <div style="background:rgba(12,123,138,.08);border-radius:11px;padding:10px">
+              <div style="font-size:11px;font-weight:800;color:#0C7B8A;margin-bottom:2px">✨ What's Helping</div>
               <div style="font-size:10.5px;color:#475569">Your protein habit tracks with fewer rough days.</div>
             </div>
           </div>
@@ -457,8 +458,8 @@
         <line x1="34" y1="196" x2="306" y2="196" stroke="#CBD5E1" stroke-width="2"/>
         <rect x="60" y="150" width="30" height="46" rx="6" fill="#A9CDF2"/>
         <rect x="110" y="120" width="30" height="76" rx="6" fill="#85B7EB"/>
-        <rect x="160" y="96" width="30" height="100" rx="6" fill="#0A66C2"/>
-        <rect x="210" y="72" width="30" height="124" rx="6" fill="#0A66C2"/>
+        <rect x="160" y="96" width="30" height="100" rx="6" fill="#0C7B8A"/>
+        <rect x="210" y="72" width="30" height="124" rx="6" fill="#0C7B8A"/>
         <path d="M62 150 L125 118 L175 96 L225 68" fill="none" stroke="#173A5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M262 52 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 z" fill="#EF9F27"/>
       </svg>
